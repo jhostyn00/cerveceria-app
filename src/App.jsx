@@ -23,8 +23,7 @@ function App() {
 
       {!receta && (
         <div className="setup-container">
-          <h2>Configura tu receta base</h2>
-          <p>Aún no hay receta configurada. Por favor añade una receta para comenzar.</p>
+          
         </div>
       )}
 

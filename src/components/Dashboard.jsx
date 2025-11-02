@@ -43,7 +43,7 @@ export default function Dashboard() {
     <div style={styles.page}>
       <div style={styles.container}>
         <div style={styles.header}>
-  <img src="/public/logo-ib.png" alt="Logo Inti Brew" style={styles.logo} />
+  <img src="/logo-ib.png" alt="Logo Inti Brew" style={styles.logo} />
   <h2 style={styles.title}>Inti Brew – Cervecería Artesanal</h2>
 </div>
 
