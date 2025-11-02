@@ -1,7 +1,8 @@
 body {
   font-family: sans-serif;
-  background: #f2f2f2;
+  
   padding: 20px;
+  background: url('/fondo.jpg') center/cover fixed;
 }
 .container {
   max-width: 700px;
@@ -40,3 +41,19 @@ th, td {
   padding: 6px;
   text-align: center;
 }
+
+
+input{
+  padding: 8px;
+    border-radius: 6px;
+    border: 1px solid rgb(183, 132, 57);
+    background: rgb(255, 245, 225);
+    margin-left: 10px;
+
+ 
+  color: black;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+
