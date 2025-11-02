@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import { collection, addDoc, getDocs } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
-import RecetaForm from "./components/RecetaForm";
-import LoteForm from "./components/LoteForm";
 import Dashboard from "./components/Dashboard";
 import "./index.css";
 
@@ -20,15 +18,9 @@ function App() {
     cargarDatos();
   }, []);
 
-  const guardarReceta = async (r) => {
-    await addDoc(collection(db, "recetas"), r);
-    setReceta(r);
-  };
 
-  const guardarLote = async (l) => {
-    await addDoc(collection(db, "lotes"), l);
-    setLotes((prev) => [...prev, l]);
-  };
+
+
 
   return (
     <div className="container">
@@ -37,14 +29,14 @@ function App() {
       {!receta && (
         <>
           <h2>Configura tu receta base</h2>
-          <RecetaForm onSave={guardarReceta} />
+          
         </>
       )}
 
       {receta && (
         <>
-          <h2>Receta base: {receta.estilo}</h2>
-          <LoteForm receta={receta} onSave={guardarLote} />
+          
+          
           <Dashboard receta={receta} lotes={lotes} />
         </>
       )}
