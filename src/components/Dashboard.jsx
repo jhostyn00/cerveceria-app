@@ -43,7 +43,7 @@ export default function Dashboard() {
     <div style={styles.page}>
       <div style={styles.container}>
         <div style={styles.header}>
-  <img src="/public/inti brew.png" alt="Logo Inti Brew" style={styles.logo} />
+  <img src="/public/logo-ib.png" alt="Logo Inti Brew" style={styles.logo} />
   <h2 style={styles.title}>Inti Brew – Cervecería Artesanal</h2>
 </div>
 
@@ -159,8 +159,8 @@ const styles = {
     flexWrap: "wrap",
   },
   logo: {
-    width: "80px",
-    height: "80px",
+    width: "100px",
+    height: "100px",
     objectFit: "contain",
   },
 
